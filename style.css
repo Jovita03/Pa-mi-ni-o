@@ -9,6 +9,7 @@ body {
     max-width: 950px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
 }
 .container a {
     color: #0e0e0e;
@@ -21,7 +22,9 @@ header {
     background-color: #82bdd8;
     padding: 10px 0;
     text-align: center;
+    display: flex;
 }
+
 h2 {
     text-align: center;
     text-shadow: 2px 2px 5px #b5c0d0;
@@ -130,10 +133,89 @@ div.pie p {
 footer p {
     text-align:center;
 }
-#futuro{
-    background-color:#ffffff;
-}
-#fotos-fav{
+#futuro {
+    background-color: #ffffff;
+ }
+#fotos-fav {
     background-color: #e3f4f4;
     justify-content: center;  
 }
+    
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 800px;
+            padding: 15px;
+        }
+    
+        nav ul li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    
+        nav ul li a {
+            font-size: 1em;
+        }
+    
+        .galeria {
+            width: 45%;
+        }
+    
+        .fotomes img {
+            width: 140px;
+            height: 170px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            max-width: 600px;
+            padding: 10px;
+        }
+    
+        nav ul li {
+            margin-right: 0;
+            text-align: center;
+        }
+    
+        .galeria {
+            width: 100%;
+        }
+    
+        .fotomes img {
+            width: 120px;
+            height: 150px;
+        }
+    
+        footer {
+            position: relative;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .container {
+            max-width: 100%;
+            padding: 5px;
+        }
+    
+        header h1 {
+            font-size: 1.5em;
+        }
+    
+        nav ul li {
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        nav ul li a {
+            font-size: 0.9em;
+        }
+    
+        .galeria {
+            width: 100%;
+        }
+    
+        .fotomes img {
+            width: 100px;
+            height: 130px;
+        }
+    }
